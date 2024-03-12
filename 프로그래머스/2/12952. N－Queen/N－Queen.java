@@ -16,6 +16,7 @@ class Solution {
             answer++;
             return;
         }
+        
         for (int col = 0; col < n; col++) {
             if (checkingPossible(row, col, n)) {
                 table[row][col] = true;
@@ -26,12 +27,12 @@ class Solution {
     }
 
     public boolean checkingPossible (int row, int col, int n) {
-        
+
         if (!checkY(row, col, n))
             return false;
-        else if (!checkD(row, col, n))
+        else if(!checkD(row, col, n))
             return false;
-        
+
         return true;
     }
 
