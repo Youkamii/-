@@ -2,12 +2,12 @@ using System;
 
 public class Solution {
     public double solution(int[] numbers) {
-        double answer = 0;
-        int ArrayLength = numbers.Length;
+        int answer = 0;
+        double l = numbers.Length;
         
-        for (int i = 0; i < ArrayLength; i++) {
+        for (int i = 0 ; i < l; i ++) {
             answer += numbers[i];
         }
-        return answer / ArrayLength;  
+        return answer / l;
     }
 }
