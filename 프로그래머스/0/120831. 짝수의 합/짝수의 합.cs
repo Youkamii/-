@@ -1,7 +1,5 @@
 using System;
 
-// for, if 문
-
 public class Solution {
     public int solution(int n) {
         int answer = 0;
