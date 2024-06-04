@@ -1,17 +1,15 @@
 using System;
+using System.Collections.Generic;
 
 public class Solution {
     public int[] solution(int n) {
-        int[] answer = new int[(n + 1) / 2];
-        int j = 0;
-        
-        for (int i = 1; i <= n; i++) {
-            if ((i) % 2 != 0) {
-                answer[j] = i;
-                j++;
-            }
+
+        List<int> answer = new List<int>();
+        // 1 3 5 7 9 ~~
+        for (int i = 1; i <= n; i += 2) {
+            answer.Add(i);
         }
         
-        return answer;
+        return answer.ToArray();
     }
 }
