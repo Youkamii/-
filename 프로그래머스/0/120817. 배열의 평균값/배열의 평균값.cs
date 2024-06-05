@@ -5,8 +5,7 @@ public class Solution {
         double answer = 0;
         int l = numbers.Length;
 
-        for (int i = 0; i < l; i++)
-            answer += numbers[i];
+        for (int i = 0; i < l; i++) answer += numbers[i]; 
 
         return answer / l;
     }
