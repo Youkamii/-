@@ -2,21 +2,19 @@ using System;
 
 public class Solution {
     public int solution(int[] numbers, int n) {
-        int sum = 0;
-        
+        int answer = 0;
+
         for (int i = 0; i < numbers.Length; i++) {
-            sum += numbers[i];
-            if (sum > n) {
-                return sum;
-            }
+            answer += numbers[i];
+            if (answer > n)
+                return answer;
         }
         
-//         int i = 0;
-//         while (sum <= n && i < numbers.Length) {
-//             sum += numbers[i];
-//             i++;
-//         }
-        
-        return sum;
+        int a = 0;
+        while(answer <= n) {
+            answer += numbers[a++];
+        }
+
+        return answer;
     }
 }
