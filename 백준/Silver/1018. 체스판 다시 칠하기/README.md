@@ -1,7 +1,7 @@
 # [Silver IV] 체스판 다시 칠하기 - 1018 
 
 [문제 링크](https://www.acmicpc.net/problem/1018) 
-
+ 
 ### 성능 요약
 
 메모리: 14240 KB, 시간: 128 ms
