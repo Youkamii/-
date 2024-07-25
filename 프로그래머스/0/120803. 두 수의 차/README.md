@@ -1,10 +1,10 @@
 # [level 0] 두 수의 차 - 120803 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120803?language=csharp) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120803) 
 
 ### 성능 요약
 
-메모리: 31.4 MB, 시간: 0.13 ms
+메모리: 31.4 MB, 시간: 0.18 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 04일 20:42:06
+2024년 07월 25일 15:48:12
 
 ### 문제 설명
 
