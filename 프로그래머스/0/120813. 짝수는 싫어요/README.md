@@ -1,10 +1,10 @@
 # [level 0] 짝수는 싫어요 - 120813 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120813) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120813?language=java) 
 
 ### 성능 요약
 
-메모리: 31.4 MB, 시간: 0.51 ms
+메모리: 77.1 MB, 시간: 0.09 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2024년 06월 12일 19:45:50
+2024년 07월 25일 15:20:26
 
 ### 문제 설명
 
