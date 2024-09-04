@@ -3,12 +3,12 @@ import java.util.*;
 class Solution {
     public int solution(int[][] board, int[] moves) {
         int answer = 0;
-        
+         
         Stack<Integer> stack = new Stack<>();
         
         for (int hook : moves) {
             int doll = crane(board, hook - 1);
-            
+  
             if (doll != 0) {
                 if(stack.isEmpty())
                     stack.add(doll);
@@ -19,7 +19,7 @@ class Solution {
                     } else {
                         stack.add(top);
                         stack.add(doll);
-                    }
+                    } 
                 }
             }
         }
