@@ -1,9 +1,8 @@
 #include <iostream>
-using namespace std;
 
 main()
 {
-    int a, b;
-    cin>>a>>b;
-    cout<<a+b;
+    int A, B;
+    std::cin>>A>>B;
+    std::cout<<A+B;
 }
