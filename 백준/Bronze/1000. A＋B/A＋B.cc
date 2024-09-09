@@ -2,7 +2,7 @@
 
 main()
 {
-    int A, B;
-    std::cin>>A>>B;
-    std::cout<<A+B;
+    int a, b;
+    std::cin>>a>>b;
+    std::cout<<a+b;
 }
