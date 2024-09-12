@@ -1,24 +1,40 @@
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.stream.Collectors;
+import java.util.Map;
 
 class Solution {
     public int[] solution(String[] id_list, String[] report, int k) {
-        List<String> list = Arrays.stream(report).distinct().collect(Collectors.toList());
-        HashMap<String, Integer> count = new HashMap<>();
-        for (String s : list) {
-            String target = s.split(" ")[1];
-            count.put(target, count.getOrDefault(target, 0) + 1);
+        int[] answer = new int[id_list.length];
+        Map<String, Integer> idIndex = new HashMap<>();
+        Map<String, List<String>> reportMap = new HashMap<>();
+
+        for (int i = 0; i < id_list.length; i++) {
+            idIndex.put(id_list[i], i);
+            reportMap.put(id_list[i], new ArrayList<>());
         }
 
-        return Arrays.stream(id_list).map(_user -> {
-            final String user = _user;
-            List<String> reportList = list.stream().filter(s -> s.startsWith(user + " ")).collect(Collectors.toList());
-            return reportList.stream().filter(s -> count.getOrDefault(s.split(" ")[1], 0) >= k).count();
-        }).mapToInt(Long::intValue).toArray();
+        for (String reported : report) {
+            String[] temp = reported.split(" ");
+            if (!reportMap.get(temp[1]).contains(temp[0])) {
+                reportMap.get(temp[1]).add(temp[0]);
+            }
+        }
+
+        for (String id : reportMap.keySet()) {
+            if (k <= reportMap.get(id).size()) {
+                for (String reporter : reportMap.get(id)) {
+                    answer[idIndex.get(reporter)]++;
+                }
+            }
+        }
+
+        return answer;
     }
 }
+
+//============================================================================
+
 
 // import java.util.*;
 
@@ -75,3 +91,4 @@ class Solution {
 // 		}
 // 	}
 // }
+
