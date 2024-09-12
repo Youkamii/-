@@ -10,7 +10,6 @@ class Solution {
 			User79 nullList = new User79();
 			user.put(s, nullList);
 		}
-
 		for (String s : report) {
 			String[] reporting = s.split(" ");
 
