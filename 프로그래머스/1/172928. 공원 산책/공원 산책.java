@@ -34,39 +34,40 @@ class Solution {
 		}
 		return whereIsMyDoggy;
 	}
+    
 	public boolean canITMove(String direction, int[] whereIsMyDoggy, String[][] map, int distance) {
-    int currentY = whereIsMyDoggy[0];
-    int currentX = whereIsMyDoggy[1];
+        int currentY = whereIsMyDoggy[0];
+        int currentX = whereIsMyDoggy[1];
 
-    switch (direction) {
-			case "E":
-				for (int i = 1; i <= distance; i++) {
-					if (currentX + i >= map[0].length || Objects.equals(map[currentY][currentX + i], "X"))
-						return false;
-				}
-				break;
-			case "W":
-				for (int i = 1; i <= distance; i++) {
-					if (currentX - i < 0 || Objects.equals(map[currentY][currentX - i], "X"))
-						return false;
-				}
-				break;
-			case "N":
-				for (int i = 1; i <= distance; i++) {
-					if (currentY - i < 0 || Objects.equals(map[currentY - i][currentX], "X"))
-						return false;
-				}
-				break;
-			case "S":
-				for (int i = 1; i <= distance; i++) {
-					if (currentY + i >= map.length || Objects.equals(map[currentY + i][currentX], "X"))
-						return false;
-				}
-				break;
-		}
+        switch (direction) {
+                case "E":
+                    for (int i = 1; i <= distance; i++) {
+                        if (currentX + i >= map[0].length || Objects.equals(map[currentY][currentX + i], "X"))
+                            return false;
+                    }
+                    break;
+                case "W":
+                    for (int i = 1; i <= distance; i++) {
+                        if (currentX - i < 0 || Objects.equals(map[currentY][currentX - i], "X"))
+                            return false;
+                    }
+                    break;
+                case "N":
+                    for (int i = 1; i <= distance; i++) {
+                        if (currentY - i < 0 || Objects.equals(map[currentY - i][currentX], "X"))
+                            return false;
+                    }
+                    break;
+                case "S":
+                    for (int i = 1; i <= distance; i++) {
+                        if (currentY + i >= map.length || Objects.equals(map[currentY + i][currentX], "X"))
+                            return false;
+                    }
+                    break;
+            }
 
-    return true;
-}
+        return true;
+    }
 
 
 
