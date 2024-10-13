@@ -7,7 +7,7 @@ class Solution {
 			if (s.charAt(i) == '+') 
 				continue;
 			else if (s.charAt(i) == '-') {
-				flag = true;
+				flag = true; 
 				continue;
 			} 
 			answer = answer * 10 + s.charAt(i) - 48;
