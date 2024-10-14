@@ -9,7 +9,7 @@ class Solution {
 
 		for (int i = 0; i < players.length; i++)
 			playerRanks.put(players[i], i);
-
+ 
 		for (String name : callings) {
 			tmpRank = playerRanks.get(name);
 			tmpName = players[tmpRank - 1];
