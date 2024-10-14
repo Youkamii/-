@@ -4,7 +4,7 @@ class Solution {
     public int[] solution(String[] keymap, String[] targets) {       
         int[] answer = new int[targets.length];
         Map<Character, Integer> typeBoard = new HashMap<>();
-        
+         
         for (int k = 0; k < keymap.length; k++) {           
             String key = keymap[k];            
             
