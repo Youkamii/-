@@ -4,4 +4,4 @@ class Solution {
 		for(int i : numbers)answer -= i;
 		return answer;
     }
-}
+} 
