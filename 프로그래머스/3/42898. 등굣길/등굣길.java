@@ -1,7 +1,6 @@
 public class Solution {
     public int solution(int m, int n, int[][] puddles) {
-        long[][] map = new long[n + 1][m + 1];
-        
+        long[][] map = new long[n + 1][m + 1];        
         
         for (int[] puddle : puddles) {
             map[puddle[1]][puddle[0]] = -1;
