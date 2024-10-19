@@ -9,7 +9,7 @@ public class Main {
 
     static int stoi(String s) {
         return Integer.parseInt(s);
-    }
+    } 
 
     static void bfsTomato() {
         while (!queue.isEmpty()) {
