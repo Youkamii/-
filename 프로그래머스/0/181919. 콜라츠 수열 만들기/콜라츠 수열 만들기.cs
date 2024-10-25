@@ -3,18 +3,14 @@ using System.Collections.Generic;
 
 public class Solution {
     public int[] solution(int n) {
-        List<int> collatzSequence = new List<int>();
+        List<int> answer = new List<int>();
         
-        collatzSequence.Add(n);
+        answer.Add(n);
         
-        while (n != 1) {
-            if (n % 2 == 0) {
-                n /= 2;
-            } else {
-                n = 3 * n + 1;
-            }
-            collatzSequence.Add(n);
+        while (n != 1) { 
+            n = n % 2 == 0 ? n / 2 : n * 3 + 1;
+            answer.Add(n);
         }
-        return collatzSequence.ToArray();
+        return answer.ToArray();
     }
 }
